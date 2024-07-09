@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Opportunities</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body {
+        color: #ebe6f1;
+        background: #030d1c;
+    }
+    .header {
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(3, 13, 28, 0.9);
+    }
+    .nav {
+        display: flex;
+        list-style-type: none;
+    }
+    .nav li a {
+        color: #e6e6e6;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin: 0px 10px;
+        transition: .3s;
+    }
+    .nav li a:hover {
+        color: #e6e6e6;
+        box-shadow: 0px 0px 100px #23ccff79, 
+        0px 0px 50px #23ccff79, 
+        inset 0px 5px 5px #23ccff, 
+        inset -5px -5px 5px rgb(0 0 0 / 50%), 
+        inset 30px 10px 35px 5px rgb(255 255 255 / 20%);
+        border-radius: 20px;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    span {
+        color: #23ccff;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 35px;
+        line-height: 35px;
+    }
+    .investments-hero {
+        text-align: center;
+        padding: 100px 10% 50px;
+    }
+    .investments-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 0 10%;
+    }
+    .investment-item {
+        background: rgba(14, 83, 104, 0.3);
+        border-radius: 15px;
+        padding: 30px;
+        transition: .3s;
+        text-align: center;
+    }
+    .investment-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 30px #23ccff79;
+    }
+    .investment-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #23ccff;
+    }
+    .investment-returns {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #23ccff;
+        margin: 20px 0;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #23ccff;
+        color: #030d1c;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: .3s;
+    }
+    .btn:hover {
+        background: #1fa8d4;
+    }
+    .footer {
+        margin-top: 100px;
+        padding: 40px 10%;
+        background: rgba(14, 83, 104, 0.2);
+    }
+    @media (max-width: 1100px) {
+        h1 { font-size: 2.1rem; }
+        p { font-size: 1.1rem; }
+        .nav li a { padding: 10px 20px; margin: 0px 5px; }
+        .investments-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 788px) {
+        .investments-grid { grid-template-columns: 1fr; }
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 href="index.html" class="logo">Fin<span>ance</span></h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="invesment.html">Investments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </div>
+
+    <div class="investments-hero">
+        <h1>Our <span>Investment Opportunities</span></h1>
+        <p>Explore our diverse range of investment options designed to help you grow your wealth and achieve your financial goals.</p>
+    </div>
+
+    <div class="investments-grid">
+        <div class="investment-item">
+            <div class="investment-icon">
+                <ion-icon name="business-outline"></ion-icon>
+            </div>
+            <h2>Stock Market</h2>
+            <p>Invest in a diversified portfolio of stocks for long-term growth potential.</p>
+            <div class="investment-returns">8-10% p.a.</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="investment-item">
+            <div class="investment-icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+            <h2>Real Estate</h2>
+            <p>Invest in property for steady rental income and potential appreciation.</p>
+            <div class="investment-returns">6-8% p.a.</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="investment-item">
+            <div class="investment-icon">
+                <ion-icon name="bar-chart-outline"></ion-icon>
+            </div>
+            <h2>Mutual Funds</h2>
+            <p>Professionally managed funds investing in a mix of stocks and bonds.</p>
+            <div class="investment-returns">7-9% p.a.</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="investment-item">
+            <div class="investment-icon">
+                <ion-icon name="diamond-outline"></ion-icon>
+            </div>
+            <h2>Precious Metals</h2>
+            <p>Invest in gold, silver, and other precious metals as a hedge against inflation.</p>
+            <div class="investment-returns">5-7% p.a.</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="investment-item">
+            <div class="investment-icon">
+                <ion-icon name="cash-outline"></ion-icon>
+            </div>
+            <h2>Bonds</h2>
+            <p>Low-risk investments with steady, fixed-income returns.</p>
+            <div class="investment-returns">3-5% p.a.</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="investment-item">
+            <div class="investment-icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+            </div>
+            <h2>Startups</h2>
+            <p>High-risk, high-reward investments in early-stage companies.</p>
+            <div class="investment-returns">20-30% p.a.</div>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Finance. All Rights Reserved.</p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
